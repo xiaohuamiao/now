@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "xiaohuamiao",
+  "builds": [
+    { "src": "*.html", "use": "@now/static" },
+    { "src": "index.js", "use": "@now/node-server"}
+  ],
+  "routes": [
+    { "src": "/badge/d/.+", "dest": "index.js"}
+  ],
+  "alias": ["huamao110"],
+  "github": {
+    "autoJobCancelation": false
+  }
+}
